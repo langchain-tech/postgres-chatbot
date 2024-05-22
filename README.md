@@ -13,6 +13,46 @@ The chatbot will be designed to understand and respond to layman language questi
 
 A user interface will be created using Streamlit where users can input their PostgreSQL credentials and ask questions.
 
+### Setup Instructions
+
+Follow these steps to set up the project on your local machine:
+
+
+**1. Clone the Repository**
+Begin by cloning the repository to your local machine:
+```
+https://github.com/langchain-tech/postgres-chatbot.git
+cd postgres-chatbot
+```
+
+**2. Create a Virtual Environment**
+It is recommended to create a virtual environment to manage dependencies:
+```
+python -m venv venv
+source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+```
+
+**3. Install Dependencies**
+Install the necessary packages listed in the requirements.txt file:
+```
+pip install -r requirements.txt
+```
+
+
+**4. Set Up Environment Variables**
+Create a .env file in the root directory of your project and add the required environment variables. For example:
+```
+LANGCHAIN_API_KEY=your_langchain_api_key
+```
+
+
+**5. Start the Application**
+
+Run the application using Streamlit:
+```
+streamlit run app.py
+```
+
 ### Notes
 
 - Questions will not be limited to one table, so it should be done to ask from database
