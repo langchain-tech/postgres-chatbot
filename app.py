@@ -40,10 +40,12 @@ def main():
         st.subheader('Please Enter your credentials')
         username = st.text_input("enter your username")
         password=  st.text_input("enter your password")
+        hostname=  st.text_input("enter your hostname")
+        port_number=  st.text_input("enter your port number")
         db_name=  st.text_input("enter your database name")
         if st.button('Process'):
             if username is not None and password is not None:
-                postgres_uri = f"postgresql+psycopg2://{username}:{password}@localhost:5432/{db_name}"
+                postgres_uri = f"postgresql+psycopg2://{username}:{password}@{hostname}:{port_number}/{db_name}"
                 st.write(f'Processed database: {postgres_uri}')
                 st.write(f'Connection to database successfully..')
 

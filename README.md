@@ -2,6 +2,7 @@
 
 ## Project Title: Postgres Chatbot with Streamlit
 
+
 ### Introduction
 
 This project aims to develop a chatbot that can interact with a PostgreSQL database and answer queries in natural language. The chatbot will be able to handle queries related to an `Orders` table, which includes columns such as `order_id`, `customer_email`, `tracking_number`, `shipping_service`, `tracking_URL`, `order_created_at`, and `order_shipped_at`.
@@ -53,6 +54,9 @@ Run the application using Streamlit:
 streamlit run app.py
 ```
 
+
+## How to use 
+![My test image](assets/postgres_db.png)
 ### Notes
 
 - Questions will not be limited to one table, so it should be done to ask from database
