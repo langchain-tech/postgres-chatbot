@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 os.environ["GOOGLE_API_KEY"]=os.getenv("GOOGLE_API_KEY")
-groq_api_key=os.getenv('GROQ_API_KEY')
 
 async def get_answer_by_sql_query(db,input):
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest",temperature=0)

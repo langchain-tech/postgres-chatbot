@@ -56,7 +56,7 @@ streamlit run app.py
 
 
 ## How to use 
-![My test image](assets/postgres_db.png)
+![My test image](assets/img1.gif)
 ### Notes
 
 - Questions will not be limited to one table, so it should be done to ask from database
